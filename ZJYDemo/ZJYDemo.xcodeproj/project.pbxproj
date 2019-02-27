@@ -18,12 +18,13 @@
 		D010B52B1FFB1E5E00F22956 /* UIIamge+FixOrien.m in Sources */ = {isa = PBXBuildFile; fileRef = D010B5291FFB1E5E00F22956 /* UIIamge+FixOrien.m */; };
 		D010B52E1FFB1E6700F22956 /* UIView+capture.m in Sources */ = {isa = PBXBuildFile; fileRef = D010B52D1FFB1E6700F22956 /* UIView+capture.m */; };
 		D010B5331FFB1E7100F22956 /* NSString+CheakSize.m in Sources */ = {isa = PBXBuildFile; fileRef = D010B5301FFB1E7100F22956 /* NSString+CheakSize.m */; };
-		D010B5341FFB1E7100F22956 /* NSDate+convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = D010B5321FFB1E7100F22956 /* NSDate+convenience.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D010B5371FFB1E8C00F22956 /* UIView+KGViewExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = D010B5351FFB1E8C00F22956 /* UIView+KGViewExtend.m */; };
 		D010B53A1FFB1E9700F22956 /* NSDictionary+CheakValue.m in Sources */ = {isa = PBXBuildFile; fileRef = D010B5391FFB1E9600F22956 /* NSDictionary+CheakValue.m */; };
 		D010B53D1FFB1E9D00F22956 /* UIColor+RGB.m in Sources */ = {isa = PBXBuildFile; fileRef = D010B53C1FFB1E9D00F22956 /* UIColor+RGB.m */; };
 		D010B5401FFB1EA900F22956 /* UIButton+CRMBar_iOS11.m in Sources */ = {isa = PBXBuildFile; fileRef = D010B53F1FFB1EA900F22956 /* UIButton+CRMBar_iOS11.m */; };
 		D010B5441FFB20F200F22956 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = D010B5421FFB20F100F22956 /* pinyin.c */; };
+		D905C9C320DA36620061DB7B /* NSDate+convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = D905C9C120DA36620061DB7B /* NSDate+convenience.m */; };
+		D988A79A20E4755600AD207F /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D988A79920E4755600AD207F /* Photos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +67,6 @@
 		D010B52D1FFB1E6700F22956 /* UIView+capture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+capture.m"; sourceTree = "<group>"; };
 		D010B52F1FFB1E7100F22956 /* NSString+CheakSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CheakSize.h"; sourceTree = "<group>"; };
 		D010B5301FFB1E7100F22956 /* NSString+CheakSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CheakSize.m"; sourceTree = "<group>"; };
-		D010B5311FFB1E7100F22956 /* NSDate+convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+convenience.h"; sourceTree = "<group>"; };
-		D010B5321FFB1E7100F22956 /* NSDate+convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+convenience.m"; sourceTree = "<group>"; };
 		D010B5351FFB1E8C00F22956 /* UIView+KGViewExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KGViewExtend.m"; sourceTree = "<group>"; };
 		D010B5361FFB1E8C00F22956 /* UIView+KGViewExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KGViewExtend.h"; sourceTree = "<group>"; };
 		D010B5381FFB1E9600F22956 /* NSDictionary+CheakValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CheakValue.h"; sourceTree = "<group>"; };
@@ -79,6 +78,9 @@
 		D010B5421FFB20F100F22956 /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
 		D010B5431FFB20F100F22956 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
 		D010B5461FFB212800F22956 /* AppMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMacro.h; sourceTree = "<group>"; };
+		D905C9C120DA36620061DB7B /* NSDate+convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+convenience.m"; sourceTree = "<group>"; };
+		D905C9C220DA36620061DB7B /* NSDate+convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+convenience.h"; sourceTree = "<group>"; };
+		D988A79920E4755600AD207F /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D988A79A20E4755600AD207F /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +116,7 @@
 				D010B50E1FFB1E1D00F22956 /* ZJYDemoTests */,
 				D010B5191FFB1E1D00F22956 /* ZJYDemoUITests */,
 				D010B4F41FFB1E1D00F22956 /* Products */,
+				D988A79820E4755500AD207F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,6 +170,8 @@
 		D010B5281FFB1E3100F22956 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				D905C9C220DA36620061DB7B /* NSDate+convenience.h */,
+				D905C9C120DA36620061DB7B /* NSDate+convenience.m */,
 				D010B53E1FFB1EA900F22956 /* UIButton+CRMBar_iOS11.h */,
 				D010B53F1FFB1EA900F22956 /* UIButton+CRMBar_iOS11.m */,
 				D010B53B1FFB1E9C00F22956 /* UIColor+RGB.h */,
@@ -174,8 +180,6 @@
 				D010B5391FFB1E9600F22956 /* NSDictionary+CheakValue.m */,
 				D010B5361FFB1E8C00F22956 /* UIView+KGViewExtend.h */,
 				D010B5351FFB1E8C00F22956 /* UIView+KGViewExtend.m */,
-				D010B5311FFB1E7100F22956 /* NSDate+convenience.h */,
-				D010B5321FFB1E7100F22956 /* NSDate+convenience.m */,
 				D010B52F1FFB1E7100F22956 /* NSString+CheakSize.h */,
 				D010B5301FFB1E7100F22956 /* NSString+CheakSize.m */,
 				D010B52A1FFB1E5E00F22956 /* UIIamge+FixOrien.h */,
@@ -201,6 +205,14 @@
 				D010B5461FFB212800F22956 /* AppMacro.h */,
 			);
 			path = Macro;
+			sourceTree = "<group>";
+		};
+		D988A79820E4755500AD207F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D988A79920E4755600AD207F /* Photos.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,8 +349,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D010B5441FFB20F200F22956 /* pinyin.c in Sources */,
-				D010B5341FFB1E7100F22956 /* NSDate+convenience.m in Sources */,
 				D010B5371FFB1E8C00F22956 /* UIView+KGViewExtend.m in Sources */,
+				D905C9C320DA36620061DB7B /* NSDate+convenience.m in Sources */,
 				D010B52E1FFB1E6700F22956 /* UIView+capture.m in Sources */,
 				D010B53D1FFB1E9D00F22956 /* UIColor+RGB.m in Sources */,
 				D010B5401FFB1EA900F22956 /* UIButton+CRMBar_iOS11.m in Sources */,

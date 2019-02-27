@@ -23,7 +23,7 @@
  *  获取字符串长度
  *
  *  @param font 字体
- *  @param size
+ *  @param size size大小
  *
  *  @return 返回字符串需要的size
  */

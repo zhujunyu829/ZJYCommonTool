@@ -50,11 +50,6 @@
 }
 
 - (CGSize)sizeForStringwithFont:(UIFont *)font andSize:(CGSize)size{
-    
-    if (ZJYsystemVersion < 7.0) {
-        CGSize titleSize = [self sizeWithFont:font constrainedToSize:size lineBreakMode:NSLineBreakByCharWrapping];
-        return titleSize;
-    }else{
         NSDictionary *attribute = @{NSFontAttributeName:font};
         
         CGSize retSize = [self boundingRectWithSize:size
@@ -65,8 +60,6 @@
                                          attributes:attribute
                                             context:nil].size;
         return retSize;
-        
-    }
 }
 - (NSString *)changeDateDDYYMMSS{
     NSDateFormatter *f = [NSDateFormatter new];
@@ -270,8 +263,8 @@
     if (!self || self.length < 1 ) {
      return @"";
     }
-    
-    return [[self disable_emoji]stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+   return  [[self disable_emoji] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+   
 }
 - (NSString *)disable_emoji
 {

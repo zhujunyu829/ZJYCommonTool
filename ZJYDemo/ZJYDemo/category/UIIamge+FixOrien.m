@@ -10,6 +10,7 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <UIKit/UIKit.h>
 #import "AppMacro.h"
+#import <Photos/Photos.h>
 @implementation UIImage (fixOrien)
 
 - (UIImage *)fixOrientation:(UIImage *)aImage {
@@ -89,6 +90,12 @@
     return img;
 }
 - (void)saveImageFrom:(UIViewController *)ctr{
+    PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
+    if (status == PHAuthorizationStatusDenied || status == PHAuthorizationStatusRestricted ) {
+        
+    }else{
+          UIImageWriteToSavedPhotosAlbum(self, self, @selector(image:didFinishSavingWithError:contextInfo:), (__bridge void *)self);
+    }
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
         ALAuthorizationStatus authStatus = [ALAssetsLibrary authorizationStatus];
         if (authStatus == ALAuthorizationStatusRestricted || authStatus == ALAuthorizationStatusDenied){
@@ -96,7 +103,7 @@
             alertView.tag = OpenSettings_Tag;
             [alertView show];
         }else{
-            UIImageWriteToSavedPhotosAlbum(self, self, @selector(image:didFinishSavingWithError:contextInfo:), (__bridge void *)self);
+          
         }
     }else{
         UIImageWriteToSavedPhotosAlbum(self, self, @selector(image:didFinishSavingWithError:contextInfo:), (__bridge void *)self);
